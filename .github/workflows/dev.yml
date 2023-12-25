@@ -19,7 +19,7 @@ jobs:
 
       - run: go install github.com/go-task/task/v3/cmd/task@latest
 
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - run: task deps
 
@@ -86,7 +86,7 @@ jobs:
 
       - run: go install github.com/go-task/task/v3/cmd/task@latest
 
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - run: context=ci prefix=.postgres task dc:up
       - run: context=ci prefix=.bolt task dc:up
@@ -102,7 +102,7 @@ jobs:
 
       - run: go install github.com/go-task/task/v3/cmd/task@latest
 
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - uses: docker/setup-qemu-action@v3
 
